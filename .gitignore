@@ -1,0 +1,11 @@
+index.php
+/uploads/
+/vendor/
+
+/themes/*
+!/themes/thinthemichael
+
+/plugins/*
+!/thinthemichael-cmb2
+!/thinthemichael-inbody
+!/InstaGo
