@@ -1,0 +1,20 @@
+{
+  "repositories": [{
+    "type": "composer",
+    "url": "https://wpackagist.org/"
+  }],
+  "require": {
+    "wpackagist-plugin/cmb2": "2.6.0",
+    "wpackagist-plugin/custom-post-type-ui": "1.6.2",
+    "wpackagist-plugin/disable-comments": "1.9.0",
+    "wpackagist-plugin/instagram-feed": "1.12",
+    "wpackagist-plugin/query-monitor": "3.3.6"
+  },
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": ["type:wordpress-plugin"],
+      "themes/{$name}/": ["type:wordpress-theme"],
+      "mu-plugin/{$name}/": ["type:wordpress-muplugin"]
+    }
+  }
+}
