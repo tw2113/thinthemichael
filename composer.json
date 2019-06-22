@@ -8,7 +8,7 @@
     "wpackagist-plugin/custom-post-type-ui": "1.6.2",
     "wpackagist-plugin/disable-comments": "1.9.0",
     "wpackagist-plugin/instagram-feed": "1.12",
-    "wpackagist-plugin/query-monitor": "3.3.4"
+    "wpackagist-plugin/query-monitor": "3.3.6"
   },
   "extra": {
     "installer-paths": {
