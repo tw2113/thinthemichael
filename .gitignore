@@ -6,6 +6,6 @@ index.php
 !/themes/thinthemichael
 
 /plugins/*
-!/thinthemichael-cmb2
-!/thinthemichael-inbody
-!/InstaGo
+!/plugins/thinthemichael-cmb2
+!/plugins/thinthemichael-inbody
+!/plugins/InstaGo
