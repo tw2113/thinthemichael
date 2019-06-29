@@ -3,7 +3,7 @@ Contributors:      Pluginize
 Tags: instagram, redirects
 Requires at least: 3.9
 Tested up to:      4.7.4
-Stable tag:        1.0.1
+Stable tag:        1.0.2
 License:           GPLv2
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Upload Zip File
 == Screenshots ==
 
 == Changelog ==
+
+= 1.0.2 =
+* Updated: CMB2 library version to add compatibility with latest PHP versions.
 
 = 1.0.1 =
 * Fixed: Prevented notices around DOCUMENT_URI notices, and misc PHP notices seen in WP updates screen.

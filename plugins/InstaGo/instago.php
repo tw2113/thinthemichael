@@ -3,7 +3,7 @@
  * Plugin Name: InstaGo
  * Plugin URI:  https://pluginize.com
  * Description: Easily send your social media traffic to your freshest content
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Pluginize
  * Author URI:  https://pluginize.com
  * License:     GPLv2
@@ -13,7 +13,7 @@
  * @link https://pluginize.com
  *
  * @package InstaGo
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 /**
@@ -67,7 +67,7 @@ final class InstaGo {
 	 * @var string
 	 * @since 1.0.0
 	 */
-	const VERSION = '1.0.1';
+	const VERSION = '1.0.2';
 
 	/**
 	 * URL of plugin directory.
