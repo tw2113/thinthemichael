@@ -31,6 +31,7 @@ add_action( 'cmb2_admin_init', function() {
 		'options'          => [
 			'completenutrition' => 'Complete Nutrition',
 			'sciencenutrition'  => 'Science Nutrition',
+			'completefitness'   => 'Complete Fitness',
 		]
 	] );
 
