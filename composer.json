@@ -5,10 +5,10 @@
   }],
   "require": {
     "wpackagist-plugin/cmb2": "2.6.0",
-    "wpackagist-plugin/custom-post-type-ui": "1.6.2",
+    "wpackagist-plugin/custom-post-type-ui": "1.7.1",
     "wpackagist-plugin/disable-comments": "1.10.2",
-    "wpackagist-plugin/instagram-feed": "2.0.2",
-    "wpackagist-plugin/query-monitor": "3.3.7"
+    "wpackagist-plugin/instagram-feed": "2.1.2",
+    "wpackagist-plugin/query-monitor": "3.4.0"
   },
   "extra": {
     "installer-paths": {

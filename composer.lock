@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70799cc09072b94a88b60e4c9363ad56",
+    "content-hash": "38598fac92e482590318229c7b3403ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -148,15 +148,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.6.2",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.6.2"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.0.2",
+            "version": "2.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.0.2"
+                "reference": "tags/2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -202,15 +202,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.3.7",
+            "version": "3.4.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.3.7"
+                "reference": "tags/3.4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.3.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.4.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
