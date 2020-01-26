@@ -4,10 +4,10 @@
     "url": "https://wpackagist.org/"
   }],
   "require": {
-    "wpackagist-plugin/cmb2": "2.6.0",
-    "wpackagist-plugin/custom-post-type-ui": "1.7.1",
+    "wpackagist-plugin/cmb2": "2.7.0",
+    "wpackagist-plugin/custom-post-type-ui": "1.7.2",
     "wpackagist-plugin/disable-comments": "1.10.2",
-    "wpackagist-plugin/instagram-feed": "2.1.4",
+    "wpackagist-plugin/instagram-feed": "2.1.5",
     "wpackagist-plugin/query-monitor": "3.5.2"
   },
   "extra": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ed8ad155d72d58dfc63be0a93d324d5",
+    "content-hash": "0e2dbfff882c768f2ca159e7b0776b5c",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,7 +130,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -138,7 +138,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1548045394"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1579634658"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -148,15 +148,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -184,15 +184,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.1.4"
+                "reference": "tags/2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
