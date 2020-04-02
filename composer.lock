@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b89a255d451d1558d791e73de62276a",
+    "content-hash": "e4f7eb4c8ce237833bf081c05dd50594",
     "packages": [
         {
             "name": "composer/installers",
@@ -150,15 +150,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.7.3"
+                "reference": "tags/1.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.7.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -186,15 +186,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.2",
+            "version": "2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.2"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.zip?timestamp=1585258599"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -228,5 +228,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
