@@ -7,7 +7,7 @@
     "wpackagist-plugin/cmb2": "2.7.0",
     "wpackagist-plugin/custom-post-type-ui": "1.7.4",
     "wpackagist-plugin/disable-comments": "1.10.2",
-    "wpackagist-plugin/instagram-feed": "2.3",
+    "wpackagist-plugin/instagram-feed": "2.4",
     "wpackagist-plugin/query-monitor": "3.5.2"
   },
   "extra": {
