@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8542dfe7cdbf3aa9a614cc0c682ac96b",
+    "content-hash": "a9b3ec30ddad27fde9d92863257b65fd",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,15 +189,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.4",
+            "version": "2.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.4"
+                "reference": "tags/2.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.4.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -207,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.5.2",
+            "version": "3.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.5.2"
+                "reference": "tags/3.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
