@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9b3ec30ddad27fde9d92863257b65fd",
+    "content-hash": "0087a7e4143728a5dd02343d0d44f947",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,15 +189,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.4.3",
+            "version": "2.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.4.3"
+                "reference": "tags/2.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.4.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.4.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
