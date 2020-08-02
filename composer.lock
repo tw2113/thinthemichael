@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0087a7e4143728a5dd02343d0d44f947",
+    "content-hash": "c95c73a3b2a2bcd94b768a00a8d28516",
     "packages": [
         {
             "name": "composer/installers",
@@ -171,7 +171,7 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "1.10.2",
+            "version": "1.10.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
@@ -179,7 +179,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1563798431"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1596006377"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -207,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.6.0"
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
