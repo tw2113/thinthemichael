@@ -6,7 +6,7 @@
   "require": {
     "wpackagist-plugin/cmb2": "2.7.0",
     "wpackagist-plugin/custom-post-type-ui": "1.8.1",
-    "wpackagist-plugin/disable-comments": "1.11.0",
+    "wpackagist-plugin/disable-comments": "2.0.2",
     "wpackagist-plugin/instagram-feed": "2.5.4",
     "wpackagist-plugin/query-monitor": "3.6.5"
   },
