@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ae62440c5edb643905cd2b5b631e8db",
+    "content-hash": "6b7f3443a02d83fc073418747b8cab20",
     "packages": [
         {
             "name": "composer/installers",
@@ -167,15 +167,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.8.1"
+                "reference": "tags/1.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.8.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
