@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1141ccaf54284b2e9f3b218176389ce6",
+    "content-hash": "560e218bbf9220e858dbda461311a8be",
     "packages": [
         {
             "name": "composer/installers",
@@ -156,7 +156,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -164,7 +164,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1579634658"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1612800893"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -192,15 +192,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.0.2"
+                "reference": "tags/2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.0.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
