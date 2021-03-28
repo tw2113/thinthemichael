@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8102ae6465e1f6fddb424e0657a3f29c",
+    "content-hash": "6c621aef06f1359af1305958e60759d6",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,6 +153,24 @@
                 }
             ],
             "time": "2021-01-14T11:07:16+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/blogroll-block",
+            "version": "1.1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/blogroll-block/",
+                "reference": "tags/1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/blogroll-block/"
         },
         {
             "name": "wpackagist-plugin/cmb2",
