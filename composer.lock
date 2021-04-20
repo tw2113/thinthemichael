@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b000d54b13416ee802b53b1f9c67cc21",
+    "content-hash": "afe47b90d31808a6d02fa2c807731cb7",
     "packages": [
         {
             "name": "composer/installers",
@@ -156,15 +156,15 @@
         },
         {
             "name": "wpackagist-plugin/blogroll-block",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/blogroll-block/",
-                "reference": "tags/1.1.0"
+                "reference": "tags/1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.2.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -192,15 +192,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.9.0"
+                "reference": "tags/1.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -210,15 +210,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.0"
+                "reference": "tags/2.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
