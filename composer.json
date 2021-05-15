@@ -1,4 +1,6 @@
 {
+  "name": "tw2113/thinthemichael",
+  "description": "My plugins",
   "repositories": [{
     "type": "composer",
     "url": "https://wpackagist.org/"
@@ -7,8 +9,8 @@
     "wpackagist-plugin/cmb2": "2.9.0",
     "wpackagist-plugin/custom-post-type-ui": "1.9.1",
     "wpackagist-plugin/disable-comments": "2.1.1",
-    "wpackagist-plugin/instagram-feed": "2.9",
-    "wpackagist-plugin/query-monitor": "3.6.7",
+    "wpackagist-plugin/instagram-feed": "2.9.1",
+    "wpackagist-plugin/query-monitor": "3.7.1",
     "wpackagist-plugin/blogroll-block": "1.2.0"
   },
   "extra": {
