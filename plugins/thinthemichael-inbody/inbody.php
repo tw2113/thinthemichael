@@ -35,7 +35,6 @@ class inbody {
 		return [
 			'_ttm_total_body_water',
 			'_ttm_dry_lean_mass',
-			'_ttm_body_fat_mass',
 			'_ttm_body_fat_mass_control',
 			'_ttm_lean_body_mass_control',
 			'_ttm_basal_metabolic_rate',
