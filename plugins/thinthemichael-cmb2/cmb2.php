@@ -53,13 +53,6 @@ add_action( 'cmb2_admin_init', function() {
 		'type' => 'text_medium'
 	] );
 
-	$cmb->add_field( [
-		'name' => 'Body Fat Mass',
-		'id'   => $prefix . 'body_fat_mass',
-		'type' => 'text_medium'
-	] );
-
-
 	/**
 	 *
 	 */
@@ -73,12 +66,6 @@ add_action( 'cmb2_admin_init', function() {
 	$cmb->add_field( [
 		'name' => 'Body Fat Mass Control',
 		'id'   => $prefix . 'body_fat_mass_control',
-		'type' => 'text_medium'
-	] );
-
-	$cmb->add_field( [
-		'name' => 'Lean Body Mass Control',
-		'id'   => $prefix . 'lean_body_mass_control',
 		'type' => 'text_medium'
 	] );
 
