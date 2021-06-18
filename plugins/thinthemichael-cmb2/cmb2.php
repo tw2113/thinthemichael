@@ -53,6 +53,12 @@ add_action( 'cmb2_admin_init', function() {
 		'type' => 'text_medium'
 	] );
 
+	$cmb->add_field( [
+		'name' => 'Body Fat Mass',
+		'id'   => $prefix . 'body_fat_mass',
+		'type' => 'text_medium'
+	] );
+
 	/**
 	 *
 	 */
@@ -93,12 +99,6 @@ add_action( 'cmb2_admin_init', function() {
 	$cmb->add_field( [
 		'name' => 'SMM',
 		'id'   => $prefix . 'muscle_analysis_smm',
-		'type' => 'text_medium'
-	] );
-
-	$cmb->add_field( [
-		'name' => 'Body Fat Mass',
-		'id'   => $prefix . 'muscle_analysis_body_fat_mass',
 		'type' => 'text_medium'
 	] );
 
