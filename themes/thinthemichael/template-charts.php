@@ -28,6 +28,12 @@ get_header();
 		?>
 		<hr/>
 
+        <h2>Body Weight</h2>
+        <div id="body_weight" class="chart"></div>
+        <h2>Skeletal Muscle Mass</h2>
+        <div id="smm" class="chart"></div>
+        <h2>Percent Body Fat</h2>
+        <div id="pbf" class="chart"></div>
 		<h2>Dry Lean Mass</h2>
 		<div id="dry_lean_mass" class="chart"></div>
 		<h2>Body Fat Mass</h2>
@@ -38,14 +44,8 @@ get_header();
 		<h2>Basal Metabolic Rate</h2>
 		<p>The higher the number, the more calories my body will burn even when sedatary.</p>
 		<div id="basal_metabolic_rate" class="chart"></div>
-		<h2>Body Weight</h2>
-		<div id="body_weight" class="chart"></div>
-		<h2>Skeletal Muscle Mass</h2>
-		<div id="smm" class="chart"></div>
 		<h2>Body Mass Index</h2>
 		<div id="bmi" class="chart"></div>
-		<h2>Percent Body Fat</h2>
-		<div id="pbf" class="chart"></div>
 		<h2>Individual body segments</h2>
 		<h3>Right arm</h3>
 		<div id="right_arm" class="chart"></div>
