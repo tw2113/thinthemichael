@@ -24,7 +24,8 @@
 	var quotes = [
 		'"Let\'s go row."',
 		'"Come with me if you want to lift"',
-		'"Gonna watch any football tonight?"'
+		'"Gonna watch any football tonight?"',
+		'"Let\'s go do lunges"'
 	];
 	var random = quotes[Math.floor(Math.random() * quotes.length)];
 	document.querySelector('#quote').innerHTML = random;
