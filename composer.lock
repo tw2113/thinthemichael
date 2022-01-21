@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b8b8682ffbd000e209f66324a296c6b",
+    "content-hash": "2ee28aa0b9f088674a88b9ebe27aa2b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -162,7 +162,7 @@
                 "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.2.0.zip"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/blogroll-block/"
@@ -180,79 +180,79 @@
                 "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1614826089"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cmb2/"
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.9.2",
+            "version": "1.10.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "trunk"
+                "reference": "tags/1.10.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.zip?timestamp=1623897602"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.10.1.zip"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/custom-post-type-ui/"
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.2",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.2"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/disable-comments/"
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "2.9.3.1",
+            "version": "2.9.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/2.9.3.1"
+                "reference": "tags/2.9.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.9.3.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.2.9.10.zip"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/instagram-feed/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.7.1",
+            "version": "3.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.7.1"
+                "reference": "tags/3.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.7.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.8.2.zip"
             },
             "require": {
-                "composer/installers": "~1.0 || ~2.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/"
@@ -266,5 +266,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
