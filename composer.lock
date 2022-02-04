@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ee28aa0b9f088674a88b9ebe27aa2b9",
+    "content-hash": "ecfac7c01baef0bd35523af0c9008664",
     "packages": [
         {
             "name": "composer/installers",
@@ -187,15 +187,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.10.1"
+                "reference": "tags/1.10.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.10.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.10.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -205,15 +205,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.3.2"
+                "reference": "tags/2.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.3.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

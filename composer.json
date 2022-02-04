@@ -7,8 +7,8 @@
   }],
   "require": {
     "wpackagist-plugin/cmb2": "2.9.0",
-    "wpackagist-plugin/custom-post-type-ui": "1.10.1",
-    "wpackagist-plugin/disable-comments": "2.3.2",
+    "wpackagist-plugin/custom-post-type-ui": "1.10.2",
+    "wpackagist-plugin/disable-comments": "2.3.3",
     "wpackagist-plugin/instagram-feed": "2.9.10",
     "wpackagist-plugin/query-monitor": "3.8.2",
     "wpackagist-plugin/blogroll-block": "1.2.0"
