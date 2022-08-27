@@ -1,0 +1,18 @@
+{
+  "generator-plugin-wp": {
+    "name": "InstaGo",
+    "homepage": "https://pluginize.com",
+    "description": "Dynamic Instagram profile URLs that can be managed from WordPress",
+    "version": "1.0.0",
+    "author": "Pluginize",
+    "authoremail": "support@pluginize.com",
+    "authorurl": "https://pluginize.com",
+    "license": "GPLv2",
+    "slug": "instago",
+    "classname": "InstaGo",
+    "classprefix": "IG_",
+    "prefix": "instago",
+    "year": 2017,
+    "currentVersionWP": "4.7.2"
+  }
+}

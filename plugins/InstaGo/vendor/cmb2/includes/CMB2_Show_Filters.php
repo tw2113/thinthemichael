@@ -11,9 +11,9 @@
  *
  * @category  WordPress_Plugin
  * @package   CMB2
- * @author    CMB2 team
+ * @author    WebDevStudios
  * @license   GPL-2.0+
- * @link      https://cmb2.io
+ * @link      http://webdevstudios.com
  */
 class CMB2_Show_Filters {
 
@@ -69,7 +69,6 @@ class CMB2_Show_Filters {
 
 	/**
 	 * Add metaboxes for an specific ID
-	 *
 	 * @since  1.0.0
 	 * @param  bool  $display       To display or not
 	 * @param  array $meta_box_args Metabox config array
@@ -95,7 +94,6 @@ class CMB2_Show_Filters {
 
 	/**
 	 * Add metaboxes for an specific Page Template
-	 *
 	 * @since  1.0.0
 	 * @param  bool  $display  To display or not
 	 * @param  array $meta_box_args Metabox config array
@@ -127,7 +125,6 @@ class CMB2_Show_Filters {
 
 	/**
 	 * Only show options-page metaboxes on their options page (but only enforce on the admin side)
-	 *
 	 * @since  1.0.0
 	 * @param  bool  $display  To display or not
 	 * @param  array $meta_box_args Metabox config array

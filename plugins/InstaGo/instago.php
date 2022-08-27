@@ -3,7 +3,7 @@
  * Plugin Name: InstaGo
  * Plugin URI:  https://pluginize.com
  * Description: Easily send your social media traffic to your freshest content
- * Version:     1.0.2
+ * Version:     1.1.1
  * Author:      Pluginize
  * Author URI:  https://pluginize.com
  * License:     GPLv2
@@ -13,7 +13,7 @@
  * @link https://pluginize.com
  *
  * @package InstaGo
- * @version 1.0.2
+ * @version 1.0.0
  */
 
 /**
@@ -67,7 +67,7 @@ final class InstaGo {
 	 * @var string
 	 * @since 1.0.0
 	 */
-	const VERSION = '1.0.2';
+	const VERSION = '1.1.1';
 
 	/**
 	 * URL of plugin directory.
@@ -116,6 +116,14 @@ final class InstaGo {
 	 * @since 1.0.0
 	 */
 	protected $instago;
+
+	/**
+	 * Instance of IG_License.
+	 *
+	 * @var IG_License
+	 * @since 1.1.0
+	 */
+	protected $license;
 
 	/**
 	 * Intended post types.
@@ -195,6 +203,8 @@ final class InstaGo {
 	public function plugin_classes() {
 		// Attach other plugin classes to the base plugin class.
 		$this->instago = new IG_Instago( $this );
+		$this->license = new IG_License( $this );
+		$this->frontend = new IG_Frontend( $this );
 	}
 
 	/**
@@ -204,17 +214,39 @@ final class InstaGo {
 	 */
 	public function hooks() {
 		add_action( 'init', array( $this, 'init' ), 0 );
-		add_action( 'template_redirect', array( $this, 'do_redirect' ), 9 );
+		add_action( 'init', array( $this, 'post_types_init' ), 11 );
 		add_action( 'admin_head', array( $this, 'inline_styles' ) );
+		add_action( 'admin_bar_menu', array( $this, 'add_page_as_redirection' ), 999 );
+		add_action( 'admin_head', array( $this, 'enqueue' ) );
+		add_action( 'admin_notices', array( $this, 'admin_bar_update_notice' ) );
 
 		$this->updater();
 	}
 
 	public function inline_styles() {
-		if ( $this->is_instago() ) {
+		if ( $this->instago->is_instago() ) {
 		?>
 			<style>.enabled span.cmb2-metabox-description{color:rgb(0,0,0);}</style>
 		<?php
+		}
+	}
+
+	public function enqueue() {
+		if ( $this->instago->is_instago() ) {
+			wp_enqueue_style(
+				'style',
+				plugins_url( 'assets/css/style.css', __FILE__ ),
+				[],
+				filemtime( __DIR__ . '/' . 'assets/css/style.css' )
+			);
+
+			wp_enqueue_script(
+				'index',
+				plugins_url( 'assets/js/index.js', __FILE__ ),
+				[],
+				filemtime( __DIR__ . '/' . 'assets/js/index.js' ),
+				true
+			);
 		}
 	}
 
@@ -226,13 +258,22 @@ final class InstaGo {
 	public function _activate() {
 		// In case people deactivate for some reason, we should respect existing settings.
 		$existing = get_option( 'instago_settings' );
+		$keys     = array( 'redirect_location', 'role_capability' );
 
 		if ( empty( $existing ) ) {
 			$options                      = array();
 			$options['dynamic_slug']      = $this->default_dynamic_slug;
 			$options['redirect_location'] = '';
+			$options['role_capability']   = '';
 
 			update_option( 'instago_settings', $options );
+		} else {
+			foreach ( $keys as $k ) {
+				if ( ! array_key_exists( $k, $existing ) ) {
+					$existing[$k] = '';
+				}
+			}
+			update_option( 'instago_settings', $existing );
 		}
 	}
 
@@ -250,16 +291,6 @@ final class InstaGo {
 	 * @since 1.0.0
 	 */
 	public function init() {
-
-		/**
-		 * Filters the post types to check against for our redirect location.
-		 *
-		 * @since 1.0.0
-		 *
-		 * @param array $value Array of post types. Default 'post' and 'page'.
-		 */
-		$this->post_types = apply_filters( 'instago_post_types', array( 'post', 'page' ) );
-
 		if ( ! $this->check_requirements() ) {
 			return;
 		}
@@ -267,6 +298,25 @@ final class InstaGo {
 		load_plugin_textdomain( 'instago', false, dirname( $this->basename ) . '/languages/' );
 
 		$this->plugin_classes();
+	}
+
+	/**
+	 * Run our post type setting on a later priority since we are moving out of just post/page.
+	 *
+	 * @since 1.1.0
+	 */
+	public function post_types_init() {
+		$post_types = get_post_types( [ 'public' => true ] );
+		unset( $post_types['attachment'] );
+
+		/**
+		 * Filters the post types to check against for our redirect location.
+		 *
+		 * @param array $value Array of post types. Default 'post' and 'page'.
+		 *
+		 * @since 1.0.0
+		 */
+		$this->post_types = apply_filters( 'instago_post_types', $post_types );
 	}
 
 	/**
@@ -353,21 +403,6 @@ final class InstaGo {
 		<?php
 	}
 
-	public function is_instago() {
-		$post_id = ( ! empty( $_GET ) && isset( $_GET['post'] ) ) ? absint( $_GET['post'] ) : 0;
-		$post_type = ( ! empty( $_GET ) && isset( $_GET['post_type'] ) ) ? sanitize_text_field( $_GET['post_type'] ) : '';
-
-		if ( in_array( $post_type, $this->post_types, true ) ) {
-			return true;
-		}
-
-		if ( in_array( get_post_type( $post_id ), $this->post_types, true ) ) {
-			return true;
-		}
-
-		return false;
-	}
-
 	/**
 	 * Magic getter for our object.
 	 *
@@ -436,54 +471,13 @@ final class InstaGo {
 	}
 
 	/**
-	 * Potentially perform our redirect.
-	 *
-	 * @since 1.0.0
-	 */
-	public function do_redirect() {
-		$options                   = get_option( 'instago_settings', array() );
-		$dynamic_slug              = ( ! empty( $options['dynamic_slug'] ) ) ? $options['dynamic_slug'] : '';
-		$redirect_location         = ( ! empty( $options['redirect_location'] ) ) ? $options['redirect_location'] : 0;
-		$redirect_location_offsite = ( ! empty( $options['redirect_location_offsite'] ) ) ? $options['redirect_location_offsite'] : '';
-
-		$maybe_subdirectory = get_option( 'siteurl' );
-
-		$subdir_pieces = explode( '/', $maybe_subdirectory );
-
-		$subdir_piece = end( $subdir_pieces );
-
-		$request = str_replace( $subdir_piece, '', $_SERVER['REQUEST_URI'] );
-
-		$request = str_replace( '/', '', $request );
-
-		// Default to our on-site location.
-		$final_location = get_permalink( absint( $redirect_location ) );
-
-		if ( empty( $_SERVER['REQUEST_URI'] ) || $request !== $dynamic_slug ) {
-			return;
-		}
-
-		// Will only enter and potentially use offsite URL if no on-site available.
-		if ( empty( $redirect_location ) ) {
-			if ( ! empty( $redirect_location_offsite ) ) {
-				$final_location = esc_url( $redirect_location_offsite );
-			} else {
-				return;
-			}
-		}
-
-		wp_redirect( $final_location );
-		exit();
-	}
-
-	/**
 	 * Run our updater routine.
 	 *
 	 * @since 1.4.0
 	 */
 	public function updater() {
 		if ( ! class_exists( 'EDD_SL_Plugin_Updater' ) ) {
-			require_once $this->path . 'vendor/edd-updater/EDD_SL_Plugin_Updater.php';
+			require_once $this->path . 'libs/edd-updater/EDD_SL_Plugin_Updater.php';
 		}
 		$options = get_option( 'instago_settings' );
 		$license_key = ( ! empty( $options['license_key'] ) ) ? trim( $options['license_key'] ) : '';
@@ -494,6 +488,56 @@ final class InstaGo {
 				'author'    => $this->plugin_author,
 			)
 		);
+	}
+
+	/**
+	 * Add WP Toolbar button for a page to be choosen
+	 * as redirection final location.
+	 *
+	 * @param [type] $wp_admin_bar
+	 * @return void
+	 */
+	public function add_page_as_redirection( $wp_admin_bar ) {
+		$page_no = get_queried_object_id();
+
+		/* If it's page or post */
+		if ( ! empty( $page_no ) && $page_no > 0 ){
+			$url = add_query_arg( 'add', $page_no, admin_url( 'options-general.php?page=instago_settings' ) );
+			$args = array(
+				'parent' => 'new-content',
+				'id'     => 'instago',
+				'title'  => esc_attr__( 'InstaGo Redirection', 'instago' ),
+				'href'   => $url,
+				'meta'   => array(
+					'class' => 'instago',
+					'title' => esc_attr__( 'InstaGo Redirection', 'instago' ),
+				),
+			);
+			$wp_admin_bar->add_menu( $args );
+		}
+	}
+
+	public function admin_bar_update_notice() {
+		if ( empty( $_GET ) ) {
+			return;
+		}
+		if ( empty( $_GET['add'] ) ) {
+			return;
+		}
+
+		$current_screen = get_current_screen();
+		if ( 'settings_page_instago_settings' !== $current_screen->id ) {
+			return;
+		}
+
+		echo '<div id="message" class="notice is-dismissible"><p>' . esc_html__( 'Successfully updated InstaGo redirect setting.', 'instago' ) . '</p></div>';
+	}
+}
+
+// Polyfill until we can support only PHP8+
+if ( ! function_exists( 'str_contains' ) ) {
+	function str_contains( $haystack, $needle ) {
+		return $needle !== '' && mb_strpos( $haystack, $needle ) !== false;
 	}
 }
 

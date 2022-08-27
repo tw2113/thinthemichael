@@ -6,9 +6,9 @@
  *
  * @category  WordPress_Plugin
  * @package   CMB2
- * @author    CMB2 team
+ * @author    WebDevStudios
  * @license   GPL-2.0+
- * @link      https://cmb2.io
+ * @link      http://webdevstudios.com
  */
 class CMB2_Type_Text extends CMB2_Type_Base {
 
@@ -34,9 +34,8 @@ class CMB2_Type_Text extends CMB2_Type_Base {
 
 	/**
 	 * Handles outputting an 'input' element
-	 *
 	 * @since  1.1.0
-	 * @param  array $args Override arguments
+	 * @param  array  $args Override arguments
 	 * @return string       Form input element
 	 */
 	public function render( $args = array() ) {
@@ -51,8 +50,12 @@ class CMB2_Type_Text extends CMB2_Type_Base {
 			'js_dependencies' => array(),
 		), $args );
 
+		if ( ! empty( $a['js_dependencies'] ) ) {
+			$this->field->add_js_dependencies( $a['js_dependencies'] );
+		}
+
 		return $this->rendered(
-			sprintf( '<input%s/>%s', $this->concat_attrs( $a, array( 'desc' ) ), $a['desc'] )
+			sprintf( '<input%s/>%s', $this->concat_attrs( $a, array( 'desc', 'js_dependencies' ) ), $a['desc'] )
 		);
 	}
 }

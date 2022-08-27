@@ -2,8 +2,8 @@
 Contributors:      Pluginize
 Tags: instagram, redirects
 Requires at least: 3.9
-Tested up to:      4.7.4
-Stable tag:        1.0.2
+Tested up to:      6.0
+Stable tag:        1.1.1
 License:           GPLv2
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,17 @@ Upload Zip File
 == Screenshots ==
 
 == Changelog ==
+
+= 1.1.1 =
+* Fixed: Admin bar redirect was not saving new redirect.
+* Fixed: Further hardened up redirect logic.
+
+= 1.1.0 =
+* Added: Set the redirect via Admin Bar with the current page you're on.
+* Added: Quick instago redirect link copying.
+* Added: Choose the user role minimum level needed to set the InstaGo destination.
+* Updated: Any public post types can be used for redirect, not just posts and pages.
+* Fixed: In cases of no redirect set, and in cases of redirect URL being visited, send to home url.
 
 = 1.0.2 =
 * Updated: CMB2 library version to add compatibility with latest PHP versions.

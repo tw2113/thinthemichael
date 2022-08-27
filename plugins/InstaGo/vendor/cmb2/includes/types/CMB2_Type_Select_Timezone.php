@@ -6,9 +6,9 @@
  *
  * @category  WordPress_Plugin
  * @package   CMB2
- * @author    CMB2 team
+ * @author    WebDevStudios
  * @license   GPL-2.0+
- * @link      https://cmb2.io
+ * @link      http://webdevstudios.com
  */
 class CMB2_Type_Select_Timezone extends CMB2_Type_Select {
 
