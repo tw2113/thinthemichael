@@ -19,7 +19,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</a>
-						<a class="brand" href="<?php bloginfo( 'url' ); ?>/"><?php echo get_bloginfo( 'title' ); ?></a>
+						<a class="brand" href="<?php bloginfo( 'url' ); ?>/"><?php echo get_bloginfo( 'title' ); ?> - <?php echo get_bloginfo( 'description' ); ?></a>
 						<div class="nav-collapse collapse">
 							<?php wp_nav_menu(
 								[
