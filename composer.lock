@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "96215cfa5c2354afd7b89ba11db6e1f0",
+    "content-hash": "4f09c43cdaa6d00d19bc292ac9db98bc",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,15 +153,15 @@
         },
         {
             "name": "wpackagist-plugin/blogroll-block",
-            "version": "1.2.0",
+            "version": "1.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/blogroll-block/",
-                "reference": "tags/1.2.0"
+                "reference": "tags/1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.2.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/blogroll-block.1.3.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -207,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.4.1"
+                "reference": "tags/2.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "6.0.7",
+            "version": "6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/6.0.7"
+                "reference": "tags/6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.0.7.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
