@@ -42,7 +42,7 @@ get_header();
 		<p>The more negative the number, the more they're recommending to lose. Want to be as close to zero as can be.</p>
 		<div id="fat_mass_control" class="chart"></div>
 		<h2>Basal Metabolic Rate</h2>
-		<p>The higher the number, the more calories my body will burn even when sedatary.</p>
+		<p>The higher the number, the more calories my body will burn even when sedentary.</p>
 		<div id="basal_metabolic_rate" class="chart"></div>
 		<h2>Body Mass Index</h2>
 		<div id="bmi" class="chart"></div>
