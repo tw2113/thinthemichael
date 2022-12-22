@@ -81,6 +81,12 @@ add_action( 'cmb2_admin_init', function() {
 		'type' => 'text_medium'
 	] );
 
+	$cmb->add_field( [
+		'name' => 'Visceral Fat Level',
+		'id'   => $prefix . 'visceral_fat',
+		'type' => 'text_medium'
+	] );
+
 	/**
 	 *
 	 */
