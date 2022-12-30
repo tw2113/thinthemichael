@@ -83,7 +83,7 @@ class inbody {
 		$years = [];
 
 		foreach ( $this->inbody->posts as $post ) {
-			$years[] = date( 'Y', strtotime( $post->post_date . ' midnight' ) * 1000 );
+			$years[] = date( 'Y', strtotime( $post->post_date ) );
 		}
 
 		return array_count_values( $years );
