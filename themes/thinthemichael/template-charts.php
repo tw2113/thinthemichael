@@ -25,7 +25,17 @@ get_header();
 				the_content();
 			}
 		}
+
+        $data = $inbody->get_data();
 		?>
+        Scans by year:
+        <?php
+            $year_strings = [];
+            foreach ( $data['years'] as $year => $count ) {
+                $year_strings[] = $year . ': <strong>' . $count . '</strong>';
+            }
+            echo implode( ', ', $year_strings );
+        ?>
 		<hr/>
 
         <h2>Body Weight</h2>
