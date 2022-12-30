@@ -39,6 +39,7 @@ class inbody {
 			'_ttm_body_fat_mass',
 			'_ttm_lean_body_mass_control',
 			'_ttm_basal_metabolic_rate',
+			'_ttm_visceral_fat',
 			'_ttm_muscle_analysis_weight',
 			'_ttm_muscle_analysis_smm',
 			'_ttm_obesity_analysis_bmi',
@@ -59,6 +60,7 @@ class inbody {
 		$data['body_fat_mass'] = $this->get_body_fat_mass();
 		$data['fat_mass_control'] = $this->get_fat_mass_control();
 		$data['basal_metabolic_rate'] = $this->get_basal_metabolic_rate();
+		$data['visceral_fat'] = $this->get_visceral_fat();
 		$data['body_weight'] = $this->get_weight();
 		$data['smm'] = $this->get_smm();
 		$data['bmi'] = $this->get_bmi();
@@ -83,7 +85,9 @@ class inbody {
 		foreach( $this->inbody->posts as $post ) {
 			$date = ( strtotime( $post->post_date . ' midnight' ) * 1000 );
 			$metric = get_post_meta( $post->ID, $key, true );
-			$metrics[] = [ $date, $metric ];
+			if ( ! empty( $metric ) ) {
+				$metrics[] = [ $date, $metric ];
+			}
 		}
 		return $metrics;
 	}
@@ -102,6 +106,9 @@ class inbody {
 	}
 	private function get_basal_metabolic_rate() {
 		return $this->get_metric( 'basal_metabolic_rate' );
+	}
+	private function get_visceral_fat() {
+		return $this->get_metric( 'visceral_fat' );
 	}
 	private function get_weight() {
 		return $this->get_metric( 'muscle_analysis_weight' );
