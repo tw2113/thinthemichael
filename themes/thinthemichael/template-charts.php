@@ -44,6 +44,9 @@ get_header();
 		<h2>Basal Metabolic Rate</h2>
 		<p>The higher the number, the more calories my body will burn even when sedentary.</p>
 		<div id="basal_metabolic_rate" class="chart"></div>
+        <h2>Visceral Body Fat</h2>
+        <p>Not all body scans had a visceral fat value.</p>
+        <div id="visceral_fat" class="chart"></div>
 		<h2>Body Mass Index</h2>
 		<div id="bmi" class="chart"></div>
 		<h2>Individual body segments</h2>
@@ -119,6 +122,10 @@ get_header();
 	options.yaxes[0].axisLabel = 'Basal Metabolic Rate';
 	$.plot("#basal_metabolic_rate", [ { label: "Basal Metabolic Rate", data: inbody_data.basal_metabolic_rate } ], options );
 	$('#basal_metabolic_rate').bind('plothover', plotdata );
+
+    options.yaxes[0].axisLabel = 'Visceral Body Fat';
+    $.plot("#visceral_fat", [ { label: "Visceral Body Fat", data: inbody_data.visceral_fat } ], options );
+    $('#visceral_fat').bind('plothover', plotdata );
 
 	options.yaxes[0].axisLabel = 'Body Weight(lbs)';
 	$.plot("#body_weight", [ { label: "Body Weight", data: inbody_data.body_weight } ], options );
