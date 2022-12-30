@@ -55,23 +55,38 @@ class inbody {
 	public function get_data(): array {
 		$data = [];
 
-		$data['body_water'] = $this->get_body_water();
-		$data['dry_lean_mass'] = $this->get_dry_lean_mass();
-		$data['body_fat_mass'] = $this->get_body_fat_mass();
-		$data['fat_mass_control'] = $this->get_fat_mass_control();
+		$data['body_water']           = $this->get_body_water();
+		$data['dry_lean_mass']        = $this->get_dry_lean_mass();
+		$data['body_fat_mass']        = $this->get_body_fat_mass();
+		$data['fat_mass_control']     = $this->get_fat_mass_control();
 		$data['basal_metabolic_rate'] = $this->get_basal_metabolic_rate();
-		$data['visceral_fat'] = $this->get_visceral_fat();
-		$data['body_weight'] = $this->get_weight();
-		$data['smm'] = $this->get_smm();
-		$data['bmi'] = $this->get_bmi();
-		$data['pbf'] = $this->get_pbf();
-		$data['right_arm'] = $this->get_right_arm();
-		$data['left_arm'] = $this->get_left_arm();
-		$data['trunk'] = $this->get_trunk();
-		$data['right_leg'] = $this->get_right_leg();
-		$data['left_leg'] = $this->get_left_leg();
+		$data['visceral_fat']         = $this->get_visceral_fat();
+		$data['body_weight']          = $this->get_weight();
+		$data['smm']                  = $this->get_smm();
+		$data['bmi']                  = $this->get_bmi();
+		$data['pbf']                  = $this->get_pbf();
+		$data['right_arm']            = $this->get_right_arm();
+		$data['left_arm']             = $this->get_left_arm();
+		$data['trunk']                = $this->get_trunk();
+		$data['right_leg']            = $this->get_right_leg();
+		$data['left_leg']             = $this->get_left_leg();
+		$data['years']                = $this->get_years();
 
 		return $data;
+	}
+
+	private function get_years() {
+		if ( ! $this->inbody->have_posts() ) {
+			return '';
+		}
+
+		$years = [];
+
+		foreach ( $this->inbody->posts as $post ) {
+			$years[] = date( 'Y', strtotime( $post->post_date . ' midnight' ) * 1000 );
+		}
+
+		return array_count_values( $years );
 	}
 
 	private function get_metric( $metric ) {
