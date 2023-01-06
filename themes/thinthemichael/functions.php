@@ -9,8 +9,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/assets/components/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_style( 'bootstrap-responsive', get_stylesheet_directory_uri() . '/assets/components/bootstrap/css/bootstrap-responsive.min.css', [ 'bootstrap' ] );
 	wp_enqueue_style( 'thinthemichael', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/assets/components/bootstrap/js/bootstrap.min.js', [], false, false );
+	$debug = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === true ) ? '' : '.min';
+	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . "/assets/components/bootstrap/js/bootstrap{$debug}.js", ['jquery'], false, true );
 } );
 
 add_filter( 'wp_default_scripts', function( $scripts ) {
