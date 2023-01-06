@@ -115,7 +115,10 @@ get_header();
 		}],
 		grid: {
 			hoverable: true,
-		}
+		},
+        legend: {
+            show: false
+        }
 	};
 	options.yaxes[0].axisLabel = 'Dry Lean Mass(lbs)';
 	$.plot("#dry_lean_mass", [ { label: "Dry Lean Mass", data: inbody_data.dry_lean_mass } ], options );
@@ -179,7 +182,7 @@ get_header();
 		border: "1px solid #fdd",
 		padding: "2px",
 		"background-color": "#fee",
-		opacity: 0.80
+        fontSize: '20px'
 	}).appendTo("body");
 })(jQuery);
 </script>
