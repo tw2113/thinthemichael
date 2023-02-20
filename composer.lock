@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f826646c540016e8b9a84baa1cd3059",
+    "content-hash": "b3cb2e86f174ed097f20c12cd73909d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -179,7 +179,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1645540116"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1676582798"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -207,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.4.2",
+            "version": "2.4.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.4.2"
+                "reference": "tags/2.4.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/instagram-feed",
-            "version": "6.1",
+            "version": "6.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/instagram-feed/",
-                "reference": "tags/6.1"
+                "reference": "tags/6.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.6.1.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -243,15 +243,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.10.1",
+            "version": "3.11.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.10.1"
+                "reference": "tags/3.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.10.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.11.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
