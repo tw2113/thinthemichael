@@ -44,3 +44,14 @@ nav.pagination {
 nav.pagination .next {
     float: right;
 }
+
+.scan-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.scan-current {
+    margin-right: 50px;
+}
+.scan-wrapper li:first-child {
+    list-style-type: none;
+}
