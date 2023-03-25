@@ -204,7 +204,7 @@ add_action( 'manage_inbody_posts_custom_column', function( $column_name, $post_i
 
 function format_inbody_meta_line( $key_field, $field_value ) {
 	$key_field_trimmed = str_replace( [ '_ttm_', '_' ], ['', ' ' ], $key_field );
-	$key_field_clean   = ucwords( $key_field_trimmed );
+	$key_field_clean   = strtoupper( $key_field_trimmed );
 
 	return sprintf(
 		'<li><strong>%s</strong>: %s</li>',
