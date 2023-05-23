@@ -36,8 +36,85 @@ get_header();
             }
             echo implode( ', ', $year_strings );
         ?>
-		<hr/>
+        <hr/>
+        <br/>
+        Data Style:
+        <a href="<?php echo esc_url( get_permalink() ); ?>">Charts</a> - <a href="<?php echo esc_url( add_query_arg( [ 'style' => 'table' ], get_permalink() ) ); ?>">Table</a>
 
+        <?php if ( ! empty( $_GET['style'] ) && 'table' === $_GET['style'] ) {
+            $scans = $inbody->get_scans();
+            $keys = [
+                'muscle_analysis_weight',
+	            'muscle_analysis_smm',
+	            'obesity_analysis_pbf',
+	            'dry_lean_mass',
+	            'body_fat_mass',
+	            'body_fat_mass_control',
+	            'basal_metabolic_rate',
+	            'visceral_fat',
+	            'obesity_analysis_bmi',
+	            'right_arm',
+	            'left_arm',
+	            'trunk',
+	            'right_leg',
+	            'left_leg',
+            ];
+            ?>
+            <table class="scan-data">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Weight</th>
+                    <th>SMM</th>
+                    <th>PBF</th>
+                    <th>Dry Lean</th>
+                    <th>Body Fat</th>
+                    <th>Fat Mass Control</th>
+                    <th>BMR</th>
+                    <th>Visceral</th>
+                    <th>BMI</th>
+                    <th>R Arm</th>
+                    <th>L Arm</th>
+                    <th>Trunk</th>
+                    <th>R Leg</th>
+                    <th>L Leg</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <th>Date</th>
+                    <th>Weight</th>
+                    <th>Skel Muscle Mass</th>
+                    <th>% Body Fat</th>
+                    <th>Dry Lean Mass</th>
+                    <th>Body Fat Mass</th>
+                    <th>Fat Mass Control</th>
+                    <th>BMR</th>
+                    <th>Visceral</th>
+                    <th>BMI</th>
+                    <th>R Arm</th>
+                    <th>L Arm</th>
+                    <th>Trunk</th>
+                    <th>R Leg</th>
+                    <th>L Leg</th>
+                </tr>
+                </tfoot>
+                <tbody>
+                <?php
+                    foreach( $scans as $date => $metrics ) {
+                        echo '<tr>';
+                        echo '<td>' . $date . '</td>';
+                        foreach( $metrics as $metric ) {
+                            echo '<td>' . $metric . '</td>';
+                        }
+                        echo '</tr>';
+                    }
+                ?>
+                </tbody>
+
+            </table>
+        <?php } else {
+        ?>
         <h2>Body Weight</h2>
         <div id="body_weight" class="chart"></div>
         <h2>Skeletal Muscle Mass</h2>
@@ -70,6 +147,7 @@ get_header();
 		<div id="right_leg" class="chart"></div>
 		<h3>Left leg</h3>
 		<div id="left_leg" class="chart"></div>
+        <?php } ?>
     </div>
 </div>
 <style>
