@@ -75,6 +75,46 @@ class inbody {
 		return $data;
 	}
 
+	public function get_scans(): array {
+		$data = [];
+
+		if ( ! $this->inbody->have_posts() ) {
+			return $data;
+		}
+
+		$meta_keys = [
+			'_ttm_muscle_analysis_weight',
+			'_ttm_muscle_analysis_smm',
+			'_ttm_obesity_analysis_pbf',
+			'_ttm_dry_lean_mass',
+			'_ttm_body_fat_mass',
+			'_ttm_body_fat_mass_control',
+			'_ttm_basal_metabolic_rate',
+			'_ttm_visceral_fat',
+			'_ttm_obesity_analysis_bmi',
+			'_ttm_right_arm',
+			'_ttm_left_arm',
+			'_ttm_trunk',
+			'_ttm_right_leg',
+			'_ttm_left_leg',
+		];
+		$meta = [];
+		foreach( $this->inbody->posts as $inbody_post ) {
+			foreach( $meta_keys as $key ) {
+				$metric = substr( $key, 5 );
+				$metric_value = get_post_meta( $inbody_post->ID, $key, true );
+				if ( empty( $metric_value ) ) {
+					$metric_value = 'X';
+				}
+				$meta[ $metric ] = $metric_value;
+			}
+			$date_formatted = date( 'Y-m-d', strtotime( $inbody_post->post_date ) );
+			$data[ $date_formatted ] = $meta;
+		}
+
+		return $data;
+	}
+
 	private function get_years() {
 		if ( ! $this->inbody->have_posts() ) {
 			return '';
