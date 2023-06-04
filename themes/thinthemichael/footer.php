@@ -26,7 +26,7 @@
 		'"Come with me if you want to lift"',
 		'"Gonna watch any football tonight?"',
 		'"Let\'s go do lunges"',
-		'Keep your core tight'
+		'"Keep your core tight"'
 	];
 	var random = quotes[Math.floor(Math.random() * quotes.length)];
 	document.querySelector('#quote').innerHTML = random;
