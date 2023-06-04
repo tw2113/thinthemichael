@@ -5,7 +5,7 @@
         ?>
     </div>
     <div class="well">
-        <h4>Quotes from my first trainer</h4>
+        <h4>Quotes from trainers and friends</h4>
         <span id="quote"></span>
     </div>
 </div>
