@@ -11,7 +11,8 @@
     "wpackagist-plugin/disable-comments": "2.4.3",
     "wpackagist-plugin/instagram-feed": "6.1.5",
     "wpackagist-plugin/query-monitor": "3.12.3",
-    "wpackagist-plugin/blogroll-block": "1.3.3"
+    "wpackagist-plugin/blogroll-block": "1.3.3",
+    "wpackagist-plugin/classic-widgets": "0.3"
   },
   "extra": {
     "installer-paths": {

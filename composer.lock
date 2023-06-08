@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5833fb8d5cc18a429c372c6fedb8430f",
+    "content-hash": "c25fbd66a03ec7595bcab13d3e9d1c90",
     "packages": [
         {
             "name": "composer/installers",
@@ -168,6 +168,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/blogroll-block/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-widgets",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-widgets/",
+                "reference": "tags/0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-widgets.0.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-widgets/"
         },
         {
             "name": "wpackagist-plugin/cmb2",
