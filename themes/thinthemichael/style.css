@@ -60,3 +60,6 @@ nav.pagination .next {
     padding: 0 8px;
     text-align: center;
 }
+.navbar-inner {
+    border-radius: unset;
+}
