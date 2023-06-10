@@ -26,7 +26,7 @@
 		'"Let\'s go do lunges"',
 		'"Keep your core tight"'
 	];
-	var random = quotes[Math.floor(Math.random() * quotes.length)];
+	let random = quotes[Math.floor(Math.random() * quotes.length)];
 	document.querySelector('#quote').innerHTML = random;
 </script>
 <?php } ?>
