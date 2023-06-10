@@ -23,8 +23,6 @@
 <script>
 	var quotes = [
 		'"Let\'s go row."',
-		'"Come with me if you want to lift"',
-		'"Gonna watch any football tonight?"',
 		'"Let\'s go do lunges"',
 		'"Keep your core tight"'
 	];
