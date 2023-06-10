@@ -5,11 +5,11 @@
 				"I've got a cunning plan.",
 				"Damn the man! Thin the Michael!",
 				"If you're not questioning my sanity, I'm not trying hard enough",
-				"Sorry I'm late, I had to clean the carcas of the cardio beast I just slayed."
+				"Sorry I'm late, I had to clean the carcass of the cardio beast I just slayed."
 			];
 
 			printf(
-				'%s %s %s %s',
+				'%s %s %s - %s',
 				'&copy;',
 				date( 'Y' ),
 				get_bloginfo( 'title' ),
