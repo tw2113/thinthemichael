@@ -63,3 +63,17 @@ nav.pagination .next {
 .navbar-inner {
     border-radius: unset;
 }
+
+.post article p {
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    font-size: 16px;
+}
+
+.sidebar li {
+    line-height: 26px;
+}
