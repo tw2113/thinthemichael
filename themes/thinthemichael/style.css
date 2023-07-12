@@ -77,3 +77,8 @@ nav.pagination .next {
 .sidebar li {
     line-height: 26px;
 }
+
+.mainContent li {
+    line-height: 36px;
+    font-size: 18px;
+}
