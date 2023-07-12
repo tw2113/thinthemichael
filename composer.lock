@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1da0d044a9dea5ab0b0dd6d8f32a38e7",
+    "content-hash": "fdb6c5dfca38ff6390e1d347d7a149a4",
     "packages": [
         {
             "name": "composer/installers",
@@ -207,15 +207,15 @@
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
-            "version": "1.13.6",
+            "version": "1.13.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/custom-post-type-ui/",
-                "reference": "tags/1.13.6"
+                "reference": "tags/1.13.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/custom-post-type-ui.1.13.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -261,15 +261,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.12.3",
+            "version": "3.13.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.12.3"
+                "reference": "tags/3.13.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.12.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.13.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
