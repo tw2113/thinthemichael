@@ -4,6 +4,7 @@ index.php
 
 /themes/*
 !/themes/thinthemichael
+!/themes/kft
 
 /plugins/*
 !/plugins/thinthemichael-cmb2
