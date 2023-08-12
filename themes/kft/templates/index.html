@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"20px"}}},"layout":{"type":"constrained","wideSize":"1170px","contentSize":"900px","justifyContent":"center"}} -->
+<div class="wp-block-group" style="margin-top:20px"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"}}}} -->
+	<div class="wp-block-columns"><!-- wp:column {"width":"70%","layout":{"type":"constrained","wideSize":"95%"}} -->
+		<div class="wp-block-column" style="flex-basis:70%"><!-- wp:query {"queryId":0,"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+			<div class="wp-block-query"><!-- wp:post-template -->
+				<!-- wp:post-title {"isLink":true} /-->
+
+				<!-- wp:group {"style":{"spacing":{"blockGap":"6px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"horizontal"}} -->
+				<div class="wp-block-group"><!-- wp:paragraph {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+					<p>Posted on</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:post-date {"isLink":true} /-->
+
+					<!-- wp:paragraph -->
+					<p>by</p>
+					<!-- /wp:paragraph -->
+
+					<!-- wp:post-author {"showAvatar":false,"isLink":true} /--></div>
+				<!-- /wp:group -->
+
+				<!-- wp:post-excerpt /-->
+
+				<!-- wp:group {"style":{"spacing":{"blockGap":"6px"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+				<div class="wp-block-group"><!-- wp:post-terms {"term":"category","prefix":"This entry was posted in ","suffix":"."} /-->
+
+					<!-- wp:post-terms {"term":"post_tag","suffix":"."} /--></div>
+				<!-- /wp:group -->
+				<!-- /wp:post-template -->
+
+				<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+				<!-- wp:query-pagination-previous /-->
+
+				<!-- wp:query-pagination-numbers /-->
+
+				<!-- wp:query-pagination-next /-->
+				<!-- /wp:query-pagination -->
+
+				<!-- wp:query-no-results -->
+				<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+				<p>No posts found</p>
+				<!-- /wp:paragraph -->
+				<!-- /wp:query-no-results --></div>
+			<!-- /wp:query --></div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"30%"} -->
+		<div class="wp-block-column" style="flex-basis:30%"><!-- wp:template-part {"slug":"sidebar","tagName":"sidebar","theme":"kft"} /--></div>
+		<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

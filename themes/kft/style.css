@@ -1,0 +1,53 @@
+/*
+ * Theme Name: Kraken Fitness Tavern
+*/
+
+.nav {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.nav li {
+	line-height: 36px;
+}
+
+.blogrolls > ul {
+	padding: 0;
+}
+
+.blogrolls > ul > li {
+	list-style: none;
+}
+
+.blogrolls .blogroll {
+	margin: 0 0 10px 25px;
+	padding: 0;
+}
+
+.blogrolls .blogroll li {
+	list-style-type: disc;
+}
+
+.site-footer-inner {
+	border-top-style: dashed;
+}
+
+.scan-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.scan-current {
+	margin-right: 50px;
+}
+
+.scan-wrapper li:first-child {
+	list-style-type: none;
+}
+
+.scan-data td {
+	border: solid #333 1px;
+	padding: 0 8px;
+	text-align: center;
+}

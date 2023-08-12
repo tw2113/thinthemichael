@@ -1,0 +1,195 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "defaultPalette": false,
+      "background": true,
+      "custom": true,
+      "link": true,
+      "text": true,
+      "duotone": [],
+      "customDuotone": false,
+      "defaultDuotone": false,
+      "palette": [
+        {
+          "slug": "scheeles-green",
+          "color": "#478800",
+          "name": "Scheeles Green"
+        },
+        {
+          "slug": "scheeles-blue",
+          "color": "#00478A",
+          "name": "Scheeles Blue"
+        },
+        {
+          "slug": "scheeles-purple",
+          "color": "#8A0047",
+          "name": "Scheeles Purple"
+        },
+        {
+          "slug": "mummy-brown",
+          "color": "#8f4a21",
+          "name": "Mummy Brown"
+        },
+        {
+          "slug": "default-link",
+          "color": "#08c",
+          "name": "Default Link"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "mummy",
+          "gradient": "conic-gradient( var(--wp--preset--color--scheeles-green), var(--wp--preset--color--scheeles-blue),var(--wp--preset--color--scheeles-purple),var(--wp--preset--color--mummy-brown),var(--wp--preset--color--scheeles-green) )",
+          "name": "Mummy"
+        }
+      ]
+    },
+    "typography": {
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+          "slug": "system-fonts",
+          "name": "System fonts"
+        },
+        {
+          "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+          "slug": "helvetica-arial",
+          "name": "Helvetica or Arial"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "extra-small",
+          "size": "1rem",
+          "name": "Extra small"
+        },
+        {
+          "slug": "small",
+          "size": "1.125rem",
+          "name": "Small"
+        },
+        {
+          "slug": "body",
+          "size": "18px",
+          "name": "body"
+        },
+        {
+          "slug": "large",
+          "size": "1.5rem",
+          "name": "Large"
+        },
+        {
+          "slug": "extra-large",
+          "size": "2.5rem",
+          "name": "Extra large"
+        }
+      ]
+    },
+    "spacing": {
+      "blockGap": true,
+      "padding": true,
+      "margin": true,
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw",
+        "%"
+      ]
+    },
+    "layout": {
+      "contentSize": "650px",
+      "wideSize": "1200px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp-preset--color--white)",
+      "text": "#333333"
+    },
+    "blocks": {
+      "core/post-title": {
+        "elements": {
+          "link": {
+            "typography": {
+              "fontSize": "39px"
+            }
+          }
+        },
+        "color": {
+          "text": "var(--wp--preset--color--default-link)"
+        },
+        "typography": {
+          "fontSize": "39px"
+        }
+      },
+      "core/post-terms": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--extra-small)"
+        },
+        "elements": {
+          "link": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--extra-small)"
+            }
+          }
+        }
+      },
+      "core/read-more": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--extra-small)"
+        },
+        "elements": {
+          "link": {
+            "typography": {
+              "fontSize": "var(--wp--preset--font-size--extra-small)"
+            }
+          }
+        }
+      }
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--default-link)"
+        },
+        ":hover": {
+          "typography": {
+            "textDecoration": "underline"
+          },
+          "color": {
+            "text": "#005580"
+          }
+        },
+        "typography": {
+          "textDecoration": "none",
+          "fontSize": "var(--wp--preset--font-size--body)",
+          "fontFamily": "var(--wp--preset--font-family--helvetica-arial)",
+          "lineHeight": "1.7"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "area": "header",
+      "title": "Header"
+    },
+    {
+      "name": "footer",
+      "area": "footer",
+      "title": "Footer"
+    },
+    {
+      "name": "sidebar",
+      "area": "uncategorized",
+      "title": "Sidebar"
+    }
+  ]
+}
