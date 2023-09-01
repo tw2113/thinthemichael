@@ -226,3 +226,14 @@ function kft_includes() {
 	require_once get_stylesheet_directory() . '/inc/shortcodes.php';
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\kft_includes' );
+
+function sidebar() {
+	$page = get_page_by_path( 'sidebar' );
+
+	if ( ! empty( $page ) ) {
+		return $page->post_content;
+	}
+
+	return '';
+}
+add_shortcode( 'sidebar', __NAMESPACE__ . '\sidebar' );
