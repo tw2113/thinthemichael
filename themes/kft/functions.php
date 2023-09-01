@@ -85,6 +85,16 @@ function kft_inbody() {
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\kft_inbody' );
 
+function kft_noindex_sidebar_page() {
+	if ( ! is_page( 'sidebar' ) ) {
+		return;
+	}
+?>
+<meta name="robots" content="noindex">
+<?php
+}
+add_action( 'wp_head', __NAMESPACE__ . '\kft_noindex_sidebar_page' );
+
 function kft_charts_header() {
 	if ( ! is_page( 'charts' ) ) {
 		return;
