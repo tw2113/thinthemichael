@@ -35,15 +35,11 @@
 
 .scan-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .scan-current {
 	margin-right: 50px;
-}
-
-.scan-wrapper li:first-child {
-	list-style-type: none;
 }
 
 .scan-data td {

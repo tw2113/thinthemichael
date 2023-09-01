@@ -18,8 +18,7 @@ function inbody_output() {
 	<hr />
 	<br />
 	Data Style:
-	<a href="<?php echo esc_url( get_permalink() ); ?>">Charts</a> -
-	<a href="<?php echo esc_url( add_query_arg( [ 'style' => 'table' ], get_permalink() ) ); ?>">Table</a>
+	<a href="<?php echo esc_url( get_permalink() ); ?>">Charts</a> - <a href="<?php echo esc_url( add_query_arg( [ 'style' => 'table' ], get_permalink() ) ); ?>">Table</a>
 
 	<?php if ( ! empty( $_GET['style'] ) && 'table' === $_GET['style'] ) {
 		$scans = $inbody->get_scans();
@@ -138,11 +137,13 @@ function single_inbody_output() {
 	<div class="scan-wrapper">
 		<div class="scan-previous">
 			<h2><?php esc_html_e( 'Previous Scan', 'thinthemichael' ); ?></h2>
+			<h3><?php
+				$previous = get_adjacent_post();
+				echo date( 'm-d-Y', strtotime( $previous->post_date ) ); ?>
+			</h3>
 			<ul>
 				<?php
-				$previous  = get_adjacent_post();
 				$data_prev = get_post_meta( $previous->ID );
-				echo '<li>' . date( 'm-d-Y', strtotime( $previous->post_date ) ) . '</li>';
 				foreach ( $data_prev as $key => $datum ) {
 					if ( $key === '_ttm_body_fat_mass' ) {
 						continue;
@@ -158,10 +159,10 @@ function single_inbody_output() {
 		</div>
 		<div class="scan-current">
 			<h2><?php esc_html_e( 'Current', 'thinthemichael' ); ?></h2>
+			<h3><?php echo date( 'm-d-Y', strtotime( get_the_date() ) ); ?></h3>
 			<ul>
 				<?php
 				$data = get_post_meta( get_the_ID() );
-				echo '<li>&nbsp;</li>';
 				foreach ( $data as $key => $datum ) {
 					if ( $key === '_ttm_body_fat_mass' ) {
 						continue;
