@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3976f33095d55f2a39c8eb9b0dea5e6",
+    "content-hash": "a8f04ed5c485037c0e0f582ed4a08b8c",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,15 +225,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.4.4",
+            "version": "2.4.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.4.4"
+                "reference": "tags/2.4.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -276,6 +276,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-migrate-db",
+            "version": "2.6.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
+                "reference": "tags/2.6.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.2.6.9.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-migrate-db/"
         }
     ],
     "packages-dev": [],
