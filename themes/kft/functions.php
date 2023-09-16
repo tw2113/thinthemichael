@@ -247,3 +247,16 @@ function sidebar() {
 	return '';
 }
 add_shortcode( 'sidebar', __NAMESPACE__ . '\sidebar' );
+
+function block_editor_full_width() {
+?>
+<style>
+    .editor-styles-wrapper .wp-block-post-content {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+</style>
+<?php
+}
+add_action('admin_head', __NAMESPACE__ . '\block_editor_full_width');
