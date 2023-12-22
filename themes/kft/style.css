@@ -29,10 +29,6 @@
 	list-style-type: disc;
 }
 
-.site-footer-inner {
-	border-top-style: dashed;
-}
-
 .scan-wrapper {
 	display: flex;
 	justify-content: space-around;
