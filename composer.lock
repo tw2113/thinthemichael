@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e675a87765724ae6ff5c5c82be9bfb9b",
+    "content-hash": "a256e844887d3b336f082915f8df421a",
     "packages": [
         {
             "name": "composer/installers",
@@ -204,6 +204,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cmb2/"
+        },
+        {
+            "name": "wpackagist-plugin/copyright-block",
+            "version": "0.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/copyright-block/",
+                "reference": "tags/0.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/copyright-block.0.1.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/copyright-block/"
         },
         {
             "name": "wpackagist-plugin/custom-post-type-ui",
