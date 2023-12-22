@@ -105,6 +105,11 @@
     "layout": {
       "contentSize": "650px",
       "wideSize": "1200px"
+    },
+    "custom": {
+      "line-height": {
+        "body": 1.9
+      }
     }
   },
   "styles": {
@@ -114,7 +119,8 @@
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--helvetica-arial)",
-      "fontSize": "var(--wp--preset--font-size--base-font)"
+      "fontSize": "var(--wp--preset--font-size--body)",
+      "lineHeight": "var(--wp--custom--line-height--body)"
     },
     "blocks": {
       "core/post-title": {
