@@ -37,6 +37,16 @@
           "slug": "default-link",
           "color": "#08c",
           "name": "Default Link"
+        },
+        {
+          "slug": "dark",
+          "color": "#222",
+          "name": "Dark"
+        },
+        {
+          "slug": "white",
+          "color": "#fff",
+          "name": "White"
         }
       ],
       "gradients": [
