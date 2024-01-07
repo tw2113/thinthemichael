@@ -43,3 +43,9 @@
 	padding: 0 8px;
 	text-align: center;
 }
+
+.entry-content .wp-block-image {
+	background: linear-gradient(180deg,var(--wp--preset--color--kraken-purple) 0%,var(--wp--preset--color--scheeles-purple) 100%);
+	margin: 15px 0;
+	padding: 15px;
+}
