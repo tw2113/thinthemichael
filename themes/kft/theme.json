@@ -44,6 +44,11 @@
           "name": "Dark"
         },
         {
+          "slug": "kraken-purple",
+          "color": "#7b1178",
+          "name": "Kraken Purple"
+        },
+        {
           "slug": "white",
           "color": "#fff",
           "name": "White"
@@ -142,7 +147,7 @@
           }
         },
         "color": {
-          "text": "var(--wp--preset--color--default-link)"
+          "text": "var(--wp--preset--color--kraken-purple)"
         },
         "typography": {
           "fontSize": "39px"
@@ -176,14 +181,14 @@
     "elements": {
       "link": {
         "color": {
-          "text": "var(--wp--preset--color--default-link)"
+          "text": "var(--wp--preset--color--kraken-purple)"
         },
         ":hover": {
           "typography": {
             "textDecoration": "underline"
           },
           "color": {
-            "text": "#005580"
+            "text": "var(--wp--preset--color--scheeles-purple)"
           }
         },
         "typography": {
