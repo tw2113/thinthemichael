@@ -49,3 +49,6 @@
 	margin: 15px 0;
 	padding: 15px;
 }
+
+::-moz-selection { background: var(--wp--preset--color--scheeles-green); color:#fff; text-shadow: none; }
+::selection { background:var(--wp--preset--color--scheeles-green); color:#fff; text-shadow: none; }
