@@ -15,7 +15,7 @@
     "wpackagist-plugin/disable-emojis": "1.7.6",
     "wpackagist-plugin/instagram-feed": "6.2.8",
     "wpackagist-plugin/query-monitor": "3.15.0",
-    "wpackagist-plugin/wp-migrate-db": "2.6.9"
+    "wpackagist-plugin/wp-migrate-db": "2.6.10"
   },
   "extra": {
     "installer-paths": {
