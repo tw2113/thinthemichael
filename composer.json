@@ -12,6 +12,7 @@
     "wpackagist-plugin/copyright-block": "0.1.1",
     "wpackagist-plugin/custom-post-type-ui": "1.15.1",
     "wpackagist-plugin/disable-comments": "2.4.5",
+    "wpackagist-plugin/disable-emojis": "1.7.6",
     "wpackagist-plugin/instagram-feed": "6.2.8",
     "wpackagist-plugin/query-monitor": "3.15.0",
     "wpackagist-plugin/wp-migrate-db": "2.6.9"
