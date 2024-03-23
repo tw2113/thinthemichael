@@ -31,7 +31,8 @@ function kft_footer() {
 				'"Come with me if you want to lift"',
 				'"Gonna watch any football tonight?"',
 				'"Let\'s go do lunges"',
-				'"Keep your core tight"'
+				'"Keep your core tight"',
+				'Salt, yes! Sugar, no!',
 			];
 			let random = quotes[Math.floor(Math.random() * quotes.length)];
 			document.querySelector('#quotecontainer').innerHTML = random;
