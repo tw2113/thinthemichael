@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a5ee782f182b2e56566702c36050a64",
+    "content-hash": "b431e7c04d46d85024410b31d5e1f88d",
     "packages": [
         {
             "name": "composer/installers",
@@ -189,7 +189,7 @@
         },
         {
             "name": "wpackagist-plugin/cmb2",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cmb2/",
@@ -197,7 +197,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1676582798"
+                "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1712086610"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
