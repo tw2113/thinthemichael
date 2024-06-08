@@ -13,8 +13,8 @@
     "wpackagist-plugin/custom-post-type-ui": "1.16.0",
     "wpackagist-plugin/disable-comments": "2.4.6",
     "wpackagist-plugin/disable-emojis": "1.7.6",
-    "wpackagist-plugin/query-monitor": "3.16.2",
-    "wpackagist-plugin/wp-migrate-db": "2.6.10"
+    "wpackagist-plugin/query-monitor": "3.16.3",
+    "wpackagist-plugin/wp-migrate-db": "2.6.11"
   },
   "extra": {
     "installer-paths": {

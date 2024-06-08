@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43204d76ed8c975f62080454ef50e367",
+    "content-hash": "bfe2045bc4100dad7e658c623f4bb80a",
     "packages": [
         {
             "name": "composer/installers",
@@ -279,15 +279,15 @@
         },
         {
             "name": "wpackagist-plugin/query-monitor",
-            "version": "3.16.2",
+            "version": "3.16.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/query-monitor/",
-                "reference": "tags/3.16.2"
+                "reference": "tags/3.16.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.16.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.16.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -297,15 +297,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-migrate-db",
-            "version": "2.6.10",
+            "version": "2.6.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-migrate-db/",
-                "reference": "tags/2.6.10"
+                "reference": "tags/2.6.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.2.6.10.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-migrate-db.2.6.11.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
