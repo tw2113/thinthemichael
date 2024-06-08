@@ -33,6 +33,7 @@ function kft_footer() {
 				'"Let\'s go do lunges"',
 				'"Keep your core tight"',
 				'Salt, yes! Sugar, no!',
+				"Powered by meat.",
 			];
 			let random = quotes[Math.floor(Math.random() * quotes.length)];
 			document.querySelector('#quotecontainer').innerHTML = random;
