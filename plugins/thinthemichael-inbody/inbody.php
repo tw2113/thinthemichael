@@ -35,6 +35,7 @@ class inbody {
 		return [
 			'_ttm_total_body_water',
 			'_ttm_dry_lean_mass',
+			'_ttm_lean_body_mass',
 			'_ttm_body_fat_mass_control',
 			'_ttm_body_fat_mass',
 			'_ttm_lean_body_mass_control',
@@ -57,6 +58,7 @@ class inbody {
 
 		$data['body_water']           = $this->get_body_water();
 		$data['dry_lean_mass']        = $this->get_dry_lean_mass();
+		$data['lean_body_mass']       = $this->get_lean_body_mass();
 		$data['body_fat_mass']        = $this->get_body_fat_mass();
 		$data['fat_mass_control']     = $this->get_fat_mass_control();
 		$data['basal_metabolic_rate'] = $this->get_basal_metabolic_rate();
@@ -87,6 +89,7 @@ class inbody {
 			'_ttm_muscle_analysis_smm',
 			'_ttm_obesity_analysis_pbf',
 			'_ttm_dry_lean_mass',
+			'_ttm_lean_body_mass',
 			'_ttm_body_fat_mass',
 			'_ttm_body_fat_mass_control',
 			'_ttm_basal_metabolic_rate',
@@ -152,6 +155,9 @@ class inbody {
 	}
 	private function get_dry_lean_mass() {
 		return $this->get_metric( 'dry_lean_mass' );
+	}
+	private function get_lean_body_mass() {
+		return $this->get_metric( 'lean_body_mass' );
 	}
 	private function get_body_fat_mass() {
 		return $this->get_metric( 'body_fat_mass' );

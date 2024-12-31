@@ -27,6 +27,7 @@ function inbody_output() {
 			'muscle_analysis_smm',
 			'obesity_analysis_pbf',
 			'dry_lean_mass',
+			'lean_body_mass',
 			'body_fat_mass',
 			'body_fat_mass_control',
 			'basal_metabolic_rate',
@@ -47,6 +48,7 @@ function inbody_output() {
 				<th>SMM</th>
 				<th>PBF</th>
 				<th>Dry Lean</th>
+				<th>Lean Body</th>
 				<th>Body Fat</th>
 				<th>Fat Mass Control</th>
 				<th>BMR</th>
@@ -63,10 +65,11 @@ function inbody_output() {
 			<tr>
 				<th>Date</th>
 				<th>Weight</th>
-				<th>Skel Muscle Mass</th>
-				<th>% Body Fat</th>
-				<th>Dry Lean Mass</th>
-				<th>Body Fat Mass</th>
+				<th>SMM</th>
+				<th>PBF</th>
+				<th>Dry Lean</th>
+				<th>Lean Body</th>
+				<th>Body Fat</th>
 				<th>Fat Mass Control</th>
 				<th>BMR</th>
 				<th>Visceral</th>
@@ -102,6 +105,8 @@ function inbody_output() {
 		<div id="pbf" class="chart"></div>
 		<h2>Dry Lean Mass</h2>
 		<div id="dry_lean_mass" class="chart"></div>
+		<h2>Lean Body Mass</h2>
+		<div id="lean_body_mass" class="chart"></div>
 		<h2>Body Fat Mass</h2>
 		<div id="body_fat_mass" class="chart"></div>
 		<h2>Fat Mass Control</h2>

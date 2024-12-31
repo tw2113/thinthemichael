@@ -165,6 +165,10 @@ function kft_charts_footer() {
 			$.plot("#dry_lean_mass", [{label: "Dry Lean Mass", data: inbody_data.dry_lean_mass}], options);
 			$('#dry_lean_mass').bind('plothover', plotdata);
 
+			options.yaxes[0].axisLabel = 'Lean Body Mass(lbs)';
+			$.plot("#lean_body_mass", [{label: "Lean Body Mass", data: inbody_data.lean_body_mass}], options);
+			$('#lean_body_mass').bind('plothover', plotdata);
+
 			options.yaxes[0].axisLabel = 'Body Fat Mass(lbs)';
 			$.plot("#body_fat_mass", [{label: "Body Fat Mass", data: inbody_data.body_fat_mass}], options);
 			$('#body_fat_mass').bind('plothover', plotdata);
